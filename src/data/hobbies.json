@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Competitive Programming",
+    "category": "Tech",
+    "description": "LeetCode daily practice - solving DSA problems",
+    "icon": "hobby-laptop-code.png",
+    "level": "Advanced",
+    "funFact": "Solved 200+ problems (uKrishna82793)"
+  },
+  {
+    "name": "System Design Study",
+    "category": "Learning",
+    "description": "Currently studying networking, OS, and system design",
+    "icon": "hobby-books.png",
+    "level": "Intermediate",
+    "funFact": "Building URL shortener for practice"
+  },
+  {
+    "name": "Anime & Manga",
+    "category": "Entertainment",
+    "description": "Watching anime series and reading manga during free time",
+    "icon": "hobby-anime.png",
+    "level": "Casual",
+    "funFact": "Enjoy exploring different genres and discussing plots online"
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "frontend": {
+    "category": "Frontend Development",
+    "skills": [
+      {"name": "ReactJS", "icon": "icon-react.png", "level": "Advanced"},
+      {"name": "HTML5", "icon": "icon-html.png", "level": "Advanced"},
+      {"name": "CSS3", "icon": "icon-css.png", "level": "Advanced"},
+      {"name": "JavaScript", "icon": "icon-javascript.png", "level": "Advanced"},
+      {"name": "TailwindCSS", "icon": "icon-tailwind.png", "level": "Intermediate"},
+      {"name": "Bootstrap", "icon": "icon-bootstrap.png", "level": "Intermediate"}
+    ]
+  },
+  "backend": {
+    "category": "Backend Development",
+    "skills": [
+      {"name": "Node.js", "icon": "icon-nodejs.png", "level": "Advanced"},
+      {"name": "Express.js", "icon": "icon-express.png", "level": "Intermediate"},
+      {"name": "MongoDB", "icon": "icon-mongodb.png", "level": "Intermediate"},
+      {"name": "MySQL", "icon": "icon-mysql.png", "level": "Intermediate"},
+      {"name": "Docker", "icon": "icon-docker.png", "level": "Intermediate"},
+      {"name": "REST APIs", "icon": "icon-api.png", "level": "Intermediate"}
+    ]
+  },
+  "languages": {
+    "category": "Programming Languages",
+    "skills": [
+      {"name": "Python", "icon": "icon-python.png", "level": "Advanced"},
+      {"name": "C++", "icon": "icon-cpp.png", "level": "Advanced"},
+      {"name": "Java", "icon": "icon-java.png", "level": "Intermediate"},
+      {"name": "C", "icon": "icon-c.png", "level": "Intermediate"},
+      {"name": "R", "icon": "icon-r.png", "level": "Intermediate"},
+      {"name": "VHDL", "icon": "icon-vhdl.png", "level": "Intermediate"},
+      {"name": "Embedded C", "icon": "icon-c.png", "level": "Intermediate"},
+      {"name": "Assembly", "icon": "icon-assembly.png", "level": "Intermediate"},
+      {"name": "TypeScript", "icon": "icon-typescript.png", "level": "Intermediate"}
+    ]
+  },
+  "systems": {
+    "category": "Systems & Tools",
+    "skills": [
+      {"name": "Git/GitHub", "icon": "icon-git.png", "level": "Advanced"},
+      {"name": "Linux", "icon": "icon-linux.png", "level": "Intermediate"},
+      {"name": "MATLAB", "icon": "icon-matlab.png", "level": "Intermediate"},
+      {"name": "Wireshark", "icon": "icon-wireshark.png", "level": "Intermediate"},
+      {"name": "LTSpice", "icon": "icon-ltspice.png", "level": "Intermediate"},
+      {"name": "Quartus", "icon": "icon-quartus.png", "level": "Intermediate"},
+      {"name": "Keil", "icon": "icon-keil.png", "level": "Intermediate"},
+      {"name": "PyCharm", "icon": "icon-pycharm.png", "level": "Intermediate"},
+      {"name": "Jupyter Notebook", "icon": "icon-jupyter.png", "level": "Intermediate"},
+      {"name": "Autodesk Fusion360", "icon": "icon-fusion360.png", "level": "Intermediate"},
+      {"name": "Figma", "icon": "icon-figma.png", "level": "Intermediate"},
+      {"name": "DaVinci Resolve", "icon": "icon-davinci.png", "level": "Intermediate"}
+    ]
+  },
+  "ml": {
+    "category": "Machine Learning / AI",
+    "skills": [
+      {"name": "TensorFlow", "icon": "icon-tensorflow.png", "level": "Intermediate"},
+      {"name": "PyTorch", "icon": "icon-pytorch.png", "level": "Intermediate"},
+      {"name": "Keras", "icon": "icon-keras.png", "level": "Intermediate"},
+      {"name": "Scikit-learn", "icon": "icon-scikitlearn.png", "level": "Advanced"},
+      {"name": "XGBoost", "icon": "icon-xgboost.png", "level": "Intermediate"},
+      {"name": "LightGBM", "icon": "icon-lightgbm.png", "level": "Intermediate"},
+      {"name": "NLTK", "icon": "icon-nltk.png", "level": "Intermediate"},
+      {"name": "spaCy", "icon": "icon-spacy.png", "level": "Intermediate"},
+      {"name": "HuggingFace Transformers", "icon": "icon-hf.png", "level": "Intermediate"},
+      {"name": "NumPy", "icon": "icon-numpy.png", "level": "Advanced"},
+      {"name": "Pandas", "icon": "icon-pandas.png", "level": "Advanced"},
+      {"name": "Matplotlib", "icon": "icon-matplotlib.png", "level": "Advanced"},
+      {"name": "Seaborn", "icon": "icon-seaborn.png", "level": "Intermediate"},
+      {"name": "SciPy", "icon": "icon-scipy.png", "level": "Intermediate"}
+    ]
+  }
+}

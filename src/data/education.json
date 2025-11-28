@@ -1,0 +1,30 @@
+{
+  "college": {
+    "name": "IIT Bombay",
+    "degree": "B.Tech + M.Tech (Dual Degree)",
+    "department": "Electrical Engineering",
+    "minor": "Data Science",
+    "rollNo": "22B3968",
+    "duration": "2022 - 2027",
+    "cgpa": "8.43",
+    "cgpaScale": "10.0",
+    "location": "Mumbai, Maharashtra",
+    "achievements": [
+      "Enrolled in advanced courses: EE709, EE782",
+      "Active in technical clubs and projects"
+    ]
+  },
+  "school": {
+    "name": "Police Modern Senior Secondary School",
+    "board": "CBSE",
+    "location": "Your City, State",
+    "class12": {
+      "year": "2022",
+      "percentage": "93%"
+    },
+    "class10": {
+      "year": "2020",
+      "cgpa": "95%"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Indian Institute of Technology Bombay",
+  "established": 1958,
+  "location": "Powai, Mumbai, Maharashtra, India",
+  "campusSize": "550 acres",
+  "ranking": {
+    "nirf2024": "3rd in Engineering",
+    "qsWorld2024": "149th globally"
+  },
+  "departments": 16,
+  "students": "11,000+",
+  "funFacts": [
+    "Home to Asia's 1st maglev train prototype",
+    "Alumni include Nandan Nilekani, Manohar Parrikar, Parag Agrawal, Raghunath Mashelkar",
+    "Hosts Techfest - Asia's largest tech fest",
+    "Mood Indigo - Asia's largest college cultural festival"
+  ]
+}
+

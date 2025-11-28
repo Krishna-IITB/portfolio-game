@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "question": "What is your current CGPA at IIT Bombay?",
+    "options": ["7.8", "8.43", "9.2", "8.0"],
+    "correctAnswer": 1,
+    "explanation": "8.43 out of 10.0"
+  },
+  {
+    "id": 2,
+    "question": "Which course involves Test Generation?",
+    "options": ["EE709", "EE782", "CS419", "EE309"],
+    "correctAnswer": 0,
+    "explanation": "EE709 - Testing & Verification"
+  },
+  {
+    "id": 3,
+    "question": "How many LeetCode problems solved?",
+    "options": ["100+", "150+", "200+", "300+"],
+    "correctAnswer": 2,
+    "explanation": "Over 200 problems on LeetCode"
+  }
+]

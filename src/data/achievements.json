@@ -1,0 +1,81 @@
+{
+  "academic": [
+    {
+      "title": "IIT Bombay Student",
+      "year": "2022-Present",
+      "description": "CGPA 8.43/10.0",
+      "icon": "medal-iitb.png"
+    }
+  ],
+  "technical": [
+    {
+      "title": "200+ LeetCode Problems",
+      "platform": "LeetCode (uKrishna82793)",
+      "description": "Strong DSA foundation"
+    }
+  ],
+  "leadership": [
+    {
+      "title": "Seasons of Code Mentor",
+      "organization": "Web and Coding Club, IIT Bombay",
+      "duration": "Jun 2024 - Aug 2024",
+      "responsibilities": [
+        "Mentored 10+ students on Intrusion Detection Systems alongside two colleagues",
+        "Guided students in monitoring network traffic and capturing packets using Scapy",
+        "Taught traffic pattern analysis and detection of suspicious behavior with Wireshark",
+        "Integrated machine learning algorithms (Decision Trees & KNN) into NIDS for practical projects"
+      ],
+      "impact": "Successfully trained students to implement functional ML-enhanced intrusion detection systems"
+    },
+    {
+      "title": "Finsearch Mentor",
+      "organization": "Finance Club, IIT Bombay",
+      "duration": "Jun 2024 - Aug 2024",
+      "responsibilities": [
+        "Mentored 12+ students in evaluating and enhancing bond valuation methods",
+        "Guided students on bond fundamentals, valuation approaches, and key influencing factors",
+        "Conducted practical assessments and addressed common limitations in bond valuation"
+      ],
+      "impact": "Enhanced students' ability to perform critical financial analyses and valuations"
+    }
+  ],
+  "extracurricular": [
+    {
+      "activity": "NCC Training",
+      "organization": "IIT Bombay",
+      "year": 2022,
+      "details": "Underwent rigorous year-long NCC training, developing discipline and teamwork skills"
+    },
+    {
+      "activity": "Cricket Sports Program",
+      "organization": "NCC Team, IIT Bombay",
+      "year": 2022,
+      "details": "Participated in a year-long cricket program to enhance sportsmanship and teamwork"
+    },
+    {
+      "activity": "Powai Lake Cleanup",
+      "organization": "NCC, IIT Bombay",
+      "year": 2022,
+      "details": "Volunteered for environmental cleanup initiatives demonstrating civic responsibility"
+    },
+    {
+      "activity": "Intra-Hostel Cricket Tournament",
+      "organization": "Hostel 1, IIT Bombay",
+      "year": 2023,
+      "details": "Part of the team that secured third place in the tournament"
+    },
+    {
+      "activity": "Institute GC 5-Km Marathon",
+      "organization": "Hostel Team, IIT Bombay",
+      "year": 2023,
+      "details": "Represented hostel in marathon, showcasing endurance and team spirit"
+    },
+    {
+      "activity": "Tug of War",
+      "organization": "Hostel Team, IIT Bombay",
+      "year": 2024,
+      "details": "Competed actively as part of the hostel team at Institute GC"
+    }
+  ]
+}
+

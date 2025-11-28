@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "AI Guard Agent",
+    "company": "EE782 Course Project",
+    "level": 2,
+    "techStack": ["DeepFace", "Llama3.2", "Telegram Bot", "OpenCV"],
+    "bullets": [
+      "Multi-modal intruder detection with facial recognition",
+      "Real-time Telegram alerts with 95% accuracy"
+    ],
+    "githubLink": "https://github.com/Krishna-IITB/ai-guard",
+    "demoImage": "/assets/demos/ai-guard-demo.gif",
+    "duration": "Jan 2025 - Apr 2025"
+  },
+  {
+    "id": 2,
+    "title": "URL Shortener with Analytics",
+    "company": "Personal Project",
+    "level": 3,
+    "techStack": ["Node.js", "Express", "MongoDB", "Redis", "Docker"],
+    "bullets": [
+      "Built scalable URL shortener with custom aliases and QR codes",
+      "Implemented analytics dashboard tracking 10K+ clicks/day"
+    ],
+    "githubLink": "https://github.com/Krishna-IITB/url-shortener",
+    "demoImage": "/assets/demos/url-shortener-demo.gif",
+    "duration": "Nov 2024 - Present"
+  },
+  {
+    "id": 3,
+    "title": "Intrusion Detection System",
+    "company": "Seasons of Code, IIT Bombay",
+    "level": 4,
+    "techStack": ["Python", "Scikit-learn", "Wireshark", "Pandas"],
+    "bullets": [
+      "ML-based network anomaly detection with 95% accuracy",
+      "Analyzed 100K+ network packets for threat classification"
+    ],
+    "githubLink": "https://github.com/Krishna-IITB/ids-project",
+    "demoImage": "/assets/demos/ids-demo.gif",
+    "duration": "May 2023 - Jul 2023"
+  },
+  {
+    "id": 4,
+    "title": "6-Stage RISC Processor",
+    "company": "EE309 Course Project",
+    "level": 5,
+    "techStack": ["VHDL", "ModelSim", "Xilinx ISE", "FPGA"],
+    "bullets": [
+      "Designed pipelined RISC processor with hazard detection",
+      "Achieved 200MHz clock frequency on Spartan-6 FPGA"
+    ],
+    "githubLink": "https://github.com/Krishna-IITB/risc-processor",
+    "demoImage": "/assets/demos/risc-demo.gif",
+    "duration": "Jan 2024 - Apr 2024"
+  }
+]

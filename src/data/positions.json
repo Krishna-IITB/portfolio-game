@@ -1,0 +1,36 @@
+[
+  {
+    "title": "Seasons of Code Mentor",
+    "organization": "Web and Coding Club, IIT Bombay",
+    "duration": "Jun 2024 - Aug 2024",
+    "responsibilities": [
+      "Mentored 10+ students on comprehensive Intrusion Detection Systems in collaboration with colleagues",
+      "Guided students to monitor network traffic and capture packets using the Scapy library",
+      "Taught students to analyze traffic patterns and identify suspicious behavior using Wireshark",
+      "Integrated machine learning techniques such as Decision Trees and K-Nearest Neighbors for detection in NIDS"
+    ],
+    "impact": "Successfully trained students to implement functional network intrusion detection systems using ML-enhanced approaches"
+  },
+  {
+    "title": "Finsearch Mentor",
+    "organization": "Finance Club, IIT Bombay",
+    "duration": "Jun 2024 - Aug 2024",
+    "responsibilities": [
+      "Mentored 12+ students in assessing and enhancing Bond Valuation methods",
+      "Guided students on bond fundamentals, valuation methods, and key influencing factors",
+      "Addressed common limitations and conducted practical bond valuation assessments"
+    ],
+    "impact": "Improved students' ability to conduct thorough bond valuation analyses and critical financial assessments"
+  },
+  {
+    "title": "Junior Engineer",
+    "organization": "Rakshak, IIT Bombay",
+    "duration": "Sep 2023 - Jun 2024",
+    "responsibilities": [
+      "Coordinated with team members on engineering projects and technical implementations",
+      "Communicated project requirements and updates effectively across teams",
+      "Applied technical skills to assist in the development and maintenance of engineering solutions"
+    ],
+    "impact": "Contributed to successful project execution and enhanced team coordination in on-site engineering tasks"
+  }
+]

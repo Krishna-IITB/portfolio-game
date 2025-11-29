@@ -1,0 +1,29 @@
+DAY 2 ASSET CHECKLIST - CHARACTER SPRITES
+==========================================
+
+KRISHNA HERO SPRITES (4 files):
+[x] krishna-idle.png (128×48px - 4 frames)
+[x] krishna-walk.png (256×48px - 8 frames)
+[x] krishna-jump.png (64×48px - 2 frames)
+[x] krishna-land.png (32×48px - 1 frame)
+
+NPC SPRITES (6 files):
+[x] npc-professor.png (32×48px - Education info)
+[x] npc-leader.png (32×48px - Position of Responsibility)
+[x] npc-senior.png (32×48px - Hobbies chat)
+[x] npc-librarian.png (32×48px - Coursework info)
+[x] npc-tour-guide.png (32×48px - IITB campus tour)
+[x] npc-recruiter.png (32×48px - Boss quiz)
+
+TOTALS:
+- Total files: 10
+- All dimensions correct: YES
+- All files optimized (<100KB each): YES
+- All backgrounds transparent: YES
+
+SOURCES USED:
+- Krishna sprites from: _______________
+- NPC sprites from: _______________
+
+LICENSE NOTES:
+- _______________

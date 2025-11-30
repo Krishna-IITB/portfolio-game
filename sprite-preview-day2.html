@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day 2 - Character Sprites Preview</title>
+    <style>
+        body { background: #1a1a2e; color: white; font-family: 'Arial', sans-serif; padding: 40px; margin: 0; }
+        h1 { color: #00ffff; text-align: center; font-size: 36px; margin-bottom: 40px; }
+        h2 { color: #ff6b6b; font-size: 28px; margin-top: 50px; border-bottom: 2px solid #444; padding-bottom: 10px; }
+        .sprite-container { display: flex; flex-wrap: wrap; gap: 30px; margin: 30px 0; }
+        .sprite-item { background: #16213e; border: 3px solid #0f3460; border-radius: 10px; padding: 20px; text-align: center; min-width: 200px; }
+        .sprite-item:hover { border-color: #00ffff; transform: scale(1.05); transition: all 0.3s; }
+        .sprite-item h3 { color: #00ffff; margin: 0 0 15px 0; font-size: 18px; }
+        .sprite-item p { color: #aaa; font-size: 12px; margin: 10px 0 0 0; }
+        img { image-rendering: pixelated; background: #0f3460; padding: 15px; border-radius: 5px; max-width: 100%; }
+        .info-box { background: #16213e; border-left: 4px solid #00ffff; padding: 20px; margin: 20px 0; border-radius: 5px; }
+        .info-box p { margin: 5px 0; color: #ccc; }
+    </style>
+</head>
+<body>
+    <h1>🎮 Day 2 - Character Sprites Preview</h1>
+    <div class="info-box">
+        <p><strong>Total Files:</strong> 10 sprite files</p>
+        <p><strong>Krishna Sprites:</strong> 4 files (idle, walk, jump, land)</p>
+        <p><strong>NPC Sprites:</strong> 6 files (professor, leader, senior, librarian, guide, recruiter)</p>
+    </div>
+
+    <h2>🦸 Krishna Hero Sprites (Main Character)</h2>
+    <div class="sprite-container">
+        <div class="sprite-item">
+            <h3>Idle Animation</h3>
+            <img src="public/assets/characters/krishna/krishna-idle.png" style="width: 256px;">
+            <p>4 frames - Standing still</p>
+        </div>
+        <div class="sprite-item">
+            <h3>Walk Animation</h3>
+            <img src="public/assets/characters/krishna/krishna-walk.png" style="width: 512px;">
+            <p>8 frames - Walking cycle</p>
+        </div>
+        <div class="sprite-item">
+            <h3>Jump Animation</h3>
+            <img src="public/assets/characters/krishna/krishna-jump.png" style="width: 128px;">
+            <p>2 frames - Jump & fall</p>
+        </div>
+        <div class="sprite-item">
+            <h3>Land Animation</h3>
+            <img src="public/assets/characters/krishna/krishna-land.png" style="width: 64px;">
+            <p>1 frame - Landing impact</p>
+        </div>
+    </div>
+
+    <h2>👥 NPC Sprites (Non-Player Characters)</h2>
+    <div class="sprite-container">
+        <div class="sprite-item"><h3>Professor NPC</h3><img src="public/assets/characters/npcs/npc-professor.png" style="width: 64px;"><p>Education history info</p></div>
+        <div class="sprite-item"><h3>Leader NPC</h3><img src="public/assets/characters/npcs/npc-leader.png" style="width: 64px;"><p>Position of Responsibility</p></div>
+        <div class="sprite-item"><h3>Senior NPC</h3><img src="public/assets/characters/npcs/npc-senior.png" style="width: 64px;"><p>Hobbies chat</p></div>
+        <div class="sprite-item"><h3>Librarian NPC</h3><img src="public/assets/characters/npcs/npc-librarian.png" style="width: 64px;"><p>Coursework info</p></div>
+        <div class="sprite-item"><h3>Tour Guide NPC</h3><img src="public/assets/characters/npcs/npc-tour-guide.png" style="width: 64px;"><p>IITB campus tour</p></div>
+        <div class="sprite-item"><h3>Recruiter NPC</h3><img src="public/assets/characters/npcs/npc-recruiter.png" style="width: 64px;"><p>Boss quiz challenge</p></div>
+    </div>
+</body>
+</html>

@@ -1,51 +1,53 @@
-{
-  "core": [
-    {
-      "code": "EE224",
-      "name": "Digital Systems",
-      "grade": "8",
-      "credits": 6,
-      "skills": ["Digital Logic", "VHDL", "FPGA"]
-    },
-    {
-      "code": "EE301",
-      "name": "Microprocessors",
-      "grade": "8",
-      "credits": 6,
-      "skills": ["Assembly Programming", "Embedded Systems", "C Programming"]
-    }
-  ],
-  "advanced": [
-    {
-      "code": "EE782",
-      "name": "AI Guard Agent",
-      "grade": "8",
-      "credits": 6,
-      "skills": ["Python", "Machine Learning", "Deep Learning", "Computer Vision"],
-      "project": "AI Guard Agent"
-    }
-  ],
-  "minor": [
-    {
-      "code": "DS303",
-      "name": "Data Science",
-      "grade": "9",
-      "credits": 6,
-      "skills": ["Python", "Pandas", "Machine Learning", "Data Visualization"]
-    }
-  ],
-  "online": [
-    {
-      "name": "Machine Learning A-Z",
-      "platform": "Udemy",
-      "skills": ["Supervised Learning", "Unsupervised Learning", "ML Workflow"],
-      "project": "Various ML projects from the course"
-    },
-    {
-      "name": "Web Development",
-      "platform": "Learner Space",
-      "skills": ["HTML", "CSS", "JavaScript", "React"],
-      "project": "Build small web apps"
-    }
-  ]
-}
+[
+  {
+    "code": "EE709",
+    "name": "Testing & Verification of VLSI Circuits",
+    "semester": "Autumn 2024",
+    "grade": "AA",
+    "credits": 6,
+    "description": "ATPG algorithms, ROBDD, fault simulation, and formal verification techniques for digital circuits.",
+    "type": "advanced"
+  },
+  {
+    "code": "EE782",
+    "name": "Advanced Machine Learning",
+    "semester": "Spring 2025",
+    "grade": "AB",
+    "credits": 6,
+    "description": "Deep learning, NLP, computer vision, and reinforcement learning with hands-on projects.",
+    "type": "advanced"
+  },
+  {
+    "code": "EE301",
+    "name": "Signals and Systems",
+    "semester": "Spring 2023",
+    "grade": "AA",
+    "credits": 6,
+    "description": "Fourier analysis, Laplace transforms, and system modeling for continuous and discrete signals.",
+    "type": "core"
+  },
+  {
+    "code": "CS419",
+    "name": "Introduction to Machine Learning",
+    "semester": "Autumn 2023",
+    "grade": "AB",
+    "credits": 6,
+    "description": "Supervised and unsupervised learning, neural networks, and practical ML applications.",
+    "type": "minor"
+  },
+  {
+    "code": "ONLINE-1",
+    "name": "Machine Learning A-Z",
+    "platform": "Udemy",
+    "instructor": "Kirill Eremenko",
+    "year": "2023",
+    "type": "online"
+  },
+  {
+    "code": "ONLINE-2",
+    "name": "Full Stack Web Development",
+    "platform": "IIT Bombay Learner Space",
+    "year": "2022",
+    "type": "online"
+  }
+]

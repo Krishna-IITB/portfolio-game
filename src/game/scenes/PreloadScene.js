@@ -1,57 +1,3 @@
-
-
-// // src/game/scenes/PreloadScene.js
-// import Phaser from 'phaser';
-
-// export default class PreloadScene extends Phaser.Scene {
-//   constructor() {
-//     super('PreloadScene');
-//   }
-
-//   preload() {
-//     const { width, height } = this.cameras.main;
-
-//     const progressBox = this.add.graphics();
-//     const progressBar = this.add.graphics();
-
-//     progressBox.fillStyle(0x222222, 0.8);
-//     progressBox.fillRect(width / 4, height / 2, width / 2, 30);
-
-//     const loadingText = this.add.text(width / 2, height / 2 - 40, 'Loading...', {
-//       fontSize: '24px',
-//       color: '#ffffff'
-//     }).setOrigin(0.5);
-
-//     this.load.on('progress', (value) => {
-//       progressBar.clear();
-//       progressBar.fillStyle(0x22c55e, 1);
-//       progressBar.fillRect(width / 4 + 5, height / 2 + 5, (width / 2 - 10) * value, 20);
-//     });
-
-//     this.load.on('complete', () => {
-//       progressBar.destroy();
-//       progressBox.destroy();
-//       loadingText.destroy();
-//       this.scene.start('GameScene'); // later you can change to 'MenuScene'
-//     });
-
-//     // --- LOAD ASSETS HERE ---
-
-//     // Example player spritesheet
-//     this.load.spritesheet('player', 'assets/characters/player.png', {
-//       frameWidth: 48,
-//       frameHeight: 48
-//     });
-
-//     // (Later: load backgrounds, platforms, collectibles, etc.)
-//   }
-
-//   create() {}
-// }
-
-
-
-
 // src/game/scenes/PreloadScene.js
 import Phaser from 'phaser';
 
@@ -63,40 +9,169 @@ export default class PreloadScene extends Phaser.Scene {
   preload() {
     const { width, height } = this.cameras.main;
 
+    // -----------------------------
+    // LOADING BAR UI
+    // -----------------------------
     const progressBox = this.add.graphics();
     const progressBar = this.add.graphics();
 
     progressBox.fillStyle(0x222222, 0.8);
     progressBox.fillRect(width / 4, height / 2, width / 2, 30);
 
-    const loadingText = this.add.text(width / 2, height / 2 - 40, 'Loading...', {
-      fontSize: '24px',
-      color: '#ffffff'
-    }).setOrigin(0.5);
+    const loadingText = this.add
+      .text(width / 2, height / 2 - 40, 'Loading...', {
+        fontSize: '24px',
+        color: '#ffffff'
+      })
+      .setOrigin(0.5);
 
-    this.load.on('progress', (value) => {
+    this.load.on('progress', value => {
       progressBar.clear();
       progressBar.fillStyle(0x22c55e, 1);
-      progressBar.fillRect(width / 4 + 5, height / 2 + 5, (width / 2 - 10) * value, 20);
+      progressBar.fillRect(
+        width / 4 + 5,
+        height / 2 + 5,
+        (width / 2 - 10) * value,
+        20
+      );
     });
 
     this.load.on('complete', () => {
       progressBar.destroy();
       progressBox.destroy();
       loadingText.destroy();
-      this.scene.start('GameScene');
+      this.scene.start('Level1Scene');
     });
 
-    // ---- LOAD ASSETS HERE ----
+    // -----------------------------
+    // BACKGROUNDS
+    // -----------------------------
+    this.load.image('bg', '/assets/backgrounds/bg.png');
+    // this.load.image('level1-iitb-hub', '/assets/backgrounds/level1-iitb-hub.png');
+    this.load.image('level1-hobbies-room', '/assets/backgrounds/level1-hobbies-room.png');
+    this.load.image('level1-library', '/assets/backgrounds/level1-library.png');
+    this.load.image('level2-satellite', '/assets/backgrounds/level2-satellite.png');
 
-    // Use your actual path: public/assets/characters/krishna/krishna-idle.png
-    // this.load.image(
-    //   'player',
-    //   'assets/characters/krishna/krishna-idle.png'
-    // );
-    this.load.image('player', 'assets/characters/krishna/krishna-idle.png');
+    // -----------------------------
+    // HOBBY OBJECTS
+    // -----------------------------
+this.load.image('gaming-setup', '/assets/objects/interactive/gaming-controller.png');
 
+    this.load.image('hobby-anime', '/assets/objects/hobbies/hobby-anime.png');
+    this.load.image('hobby-gym', '/assets/objects/hobbies/hobby-gym.png');
+    this.load.image('hobby-laptop', '/assets/objects/hobbies/hobby-laptop-code.png');
+    this.load.image('hobby-manga', '/assets/objects/hobbies/hobby-manga.png');
+
+    // -----------------------------
+    // PLATFORMS
+    // -----------------------------
+    this.load.image('ground-tile', '/assets/platforms/ground-tile.png');
+    this.load.image('platform-basic', '/assets/platforms/platform-basic.png');
+
+    // -----------------------------
+    // INTERACTIVE OBJECTS / ZONES
+    // -----------------------------
+    this.load.image('signboard-welcome', '/assets/objects/interactive/signboard-welcome.png');
+    this.load.image('npc-professor', '/assets/characters/npcs/npc-professor.png');
+    this.load.image('npc-leader', '/assets/characters/npcs/npc-leader.png');
+    this.load.image('door-hobbies', '/assets/objects/interactive/door-hobbies.png');
+    this.load.image('door-library', '/assets/objects/interactive/door_closed.png');
+    this.load.image('info-kiosk', '/assets/objects/interactive/info-kiosk.png');
+    this.load.image('door-large', '/assets/objects/interactive/door_large.png');
+
+    // Level 2 satellite dish
+    this.load.image('satellite-dish', '/assets/objects/interactive/satellite-dish.png');
+this.load.image('level2-satellite', '/assets/backgrounds/level2-satellite.png');
+    // -----------------------------
+    // LIBRARY OBJECTS (CORRECTED)
+    // -----------------------------
+    this.load.image('bookshelf', '/assets/objects/interactive/bookshelf.png');
+    this.load.image('certificate-frame', '/assets/objects/interactive/certificate-frame.png');
+
+
+
+
+// Level 2 - Satellite project images
+this.load.image('solar-rgb', '/assets/projects/satellite/solar_rgb.jpg');
+this.load.image('solar-segmented', '/assets/projects/satellite/solar_segmented.jpg');
+this.load.image('land-rgb', '/assets/projects/satellite/land_rgb.tif');
+this.load.image('land-segmented', '/assets/projects/satellite/land_segmented.png');
+
+
+   
+// Level 3 assets
+this.load.image('level3-security', '/assets/backgrounds/level3-security.png');
+this.load.image('cctv-head', '/assets/objects/interactive/cctv-camera.png'); // use real file
+this.load.image('laser-beam', '/assets/objects/interactive/network-router.png'); // pick any thin image
+this.load.image('pc-terminal', '/assets/objects/interactive/computer-desk.png');
+
+// Level 3 collectibles (you don't actually have these files, so reuse existing icons)
+this.load.image('icon-deepface', '/assets/skills/ml/opencv.png');
+this.load.image('icon-llama',    '/assets/skills/ml/pytorch.png');
+this.load.image('icon-telegram', '/assets/skills/systems/github.png');
+
+
+
+
+    
+    // Course books - FIXED PATHS (coursework folder, not interactive)
+    this.load.image('book-ee709', '/assets/objects/coursework/book-ee709.png');
+    this.load.image('book-ee782', '/assets/objects/coursework/book-ee782.png');
+    this.load.image('book-ds303', '/assets/objects/coursework/book-DS303.png');
+    this.load.image('book-cs213', '/assets/objects/coursework/book-CS213.png');
+
+    // -----------------------------
+    // COLLECTIBLES
+    // -----------------------------
+    this.load.image('star-gold', '/assets/collectibles/stars/star-gold.png');
+    this.load.image('star-rainbow', '/assets/collectibles/stars/star-rainbow.png');
+
+    // -----------------------------
+    // TECH ICONS (used across levels)
+    // -----------------------------
+    // Frontend
+    this.load.image('icon-react', '/assets/skills/frontend/react.png');
+    this.load.image('icon-angular', '/assets/skills/frontend/angular.png');
+    this.load.image('icon-vue', '/assets/skills/frontend/vuedotjs.png');
+    this.load.image('icon-tailwind', '/assets/skills/frontend/tailwindcss.png');
+
+    // ML (include all you'll use in Level 2)
+    this.load.image('icon-python', '/assets/skills/ml/python.png');
+    this.load.image('icon-pytorch', '/assets/skills/ml/pytorch.png');
+    this.load.image('icon-yolo', '/assets/skills/ml/yolo.png');
+    this.load.image('icon-unet', '/assets/skills/ml/unet.png');
+    this.load.image('icon-numpy', '/assets/skills/ml/numpy.png');
+    this.load.image('icon-geojson', '/assets/skills/ml/geojson.png');
+
+    // Backend / systems (for PyInstaller + extras)
+    this.load.image('icon-pyinstaller', '/assets/skills/backend/pyinstaller.png');
+    this.load.image('icon-docker', '/assets/skills/systems/docker.png');
+    this.load.image('icon-linux', '/assets/skills/systems/linux.png');
+    this.load.image('icon-git', '/assets/skills/systems/git.png');
+    this.load.image('icon-redis', '/assets/skills/backend/redis.png');
+
+    // -----------------------------
+    // PLAYER SPRITESHEET
+    // -----------------------------
+    this.load.spritesheet(
+      'krishna-idle',
+      '/assets/characters/krishna/krishna-idle.png',
+      {
+        frameWidth: 32,
+        frameHeight: 48
+      }
+    );
   }
 
   create() {}
 }
+
+
+
+
+
+
+
+
+
+

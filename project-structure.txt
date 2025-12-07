@@ -1,0 +1,213 @@
+.
+├── assets-checklist-day2.txt
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── project-structure.txt
+├── public
+│   ├── assets
+│   │   ├── backgrounds
+│   │   │   ├── boss-arena.png
+│   │   │   ├── level1-hobbies-room.png
+│   │   │   ├── level1-iitb-hub.png
+│   │   │   ├── level1-library.png
+│   │   │   ├── level2-satellite.png
+│   │   │   ├── level3-security.png
+│   │   │   ├── level4-server.png
+│   │   │   ├── level5-code-editor.png
+│   │   │   ├── level6-network.png
+│   │   │   ├── level7-circuit.png
+│   │   │   ├── level8-lab.png
+│   │   │   └── menu-bg.png
+│   │   ├── characters
+│   │   │   ├── krishna
+│   │   │   │   ├── krishna-idle.png
+│   │   │   │   ├── krishna-jump.png
+│   │   │   │   ├── krishna-land.png
+│   │   │   │   └── krishna-walk.png
+│   │   │   └── npcs
+│   │   │       ├── npc-leader.png
+│   │   │       ├── npc-librarian.png
+│   │   │       ├── npc-professor.png
+│   │   │       ├── npc-recruiter.png
+│   │   │       ├── npc-senior.png
+│   │   │       └── npc-tour-guide.png
+│   │   ├── collectibles
+│   │   │   ├── stars
+│   │   │   │   ├── star-gold.png
+│   │   │   │   ├── star-rainbow.gif
+│   │   │   │   ├── star-rainbow.png
+│   │   │   │   └── star-silver.png
+│   │   │   └── trophies
+│   │   │       ├── medal-100.png
+│   │   │       ├── medal-cgpa.png
+│   │   │       ├── medal-jee.png
+│   │   │       ├── trophy-bronze.png
+│   │   │       ├── trophy-gold.png
+│   │   │       └── trophy-silver.png
+│   │   ├── objects
+│   │   │   ├── coursework
+│   │   │   │   ├── book-CS213.png
+│   │   │   │   ├── book-DS303.png
+│   │   │   │   ├── book-ee709.png
+│   │   │   │   ├── book-ee782.png
+│   │   │   │   └── scroll-certificate.png
+│   │   │   ├── decorative
+│   │   │   │   ├── cloud-small.png
+│   │   │   │   ├── desk.png
+│   │   │   │   ├── lamp-post.png
+│   │   │   │   ├── plant-pot.png
+│   │   │   │   └── tree.png
+│   │   │   ├── hobbies
+│   │   │   │   ├── hobby-anime.png
+│   │   │   │   ├── hobby-gym.png
+│   │   │   │   ├── hobby-laptop-code.png
+│   │   │   │   └── hobby-manga.png
+│   │   │   └── interactive
+│   │   │       ├── bookshelf.png
+│   │   │       ├── cctv-camera.png
+│   │   │       ├── certificate-frame.png
+│   │   │       ├── chip-processor.png
+│   │   │       ├── computer-desk.png
+│   │   │       ├── door_closed.png
+│   │   │       ├── door_large.png
+│   │   │       ├── door_open.png
+│   │   │       ├── door-hobbies.png
+│   │   │       ├── face-scanner.png
+│   │   │       ├── info-kiosk.png
+│   │   │       ├── network-router.png
+│   │   │       ├── postbox.png
+│   │   │       ├── qr-code.png
+│   │   │       ├── satellite-dish.png
+│   │   │       ├── server-rack.png
+│   │   │       ├── signboard-welcome.png
+│   │   │       └── trophy_cabinet.png
+│   │   ├── platforms
+│   │   │   ├── ground-tile.png
+│   │   │   ├── ground-tiling-test-0.png
+│   │   │   ├── ground-tiling-test-1.png
+│   │   │   ├── ground-tiling-test.png
+│   │   │   ├── platform-basic-test.png
+│   │   │   ├── platform-basic.png
+│   │   │   ├── platform-cloud-test.png
+│   │   │   ├── platform-cloud.png
+│   │   │   ├── platform-metal-test.png
+│   │   │   ├── platform-metal.png
+│   │   │   ├── platform-wood-test.png
+│   │   │   └── platform-wood.png
+│   │   ├── skills
+│   │   │   ├── backend
+│   │   │   │   ├── django.png
+│   │   │   │   ├── express.png
+│   │   │   │   ├── fastapi.png
+│   │   │   │   ├── flask.png
+│   │   │   │   ├── mongodb.png
+│   │   │   │   ├── mysql.png
+│   │   │   │   ├── nodedotjs.png
+│   │   │   │   ├── postgresql.png
+│   │   │   │   ├── pyinstaller.png
+│   │   │   │   ├── redis.png
+│   │   │   │   └── springboot.png
+│   │   │   ├── frontend
+│   │   │   │   ├── angular.png
+│   │   │   │   ├── bootstrap.png
+│   │   │   │   ├── css.svg.png
+│   │   │   │   ├── html5.png
+│   │   │   │   ├── javascript.png
+│   │   │   │   ├── react.png
+│   │   │   │   ├── redux.png
+│   │   │   │   ├── tailwindcss.png
+│   │   │   │   ├── typescript.png
+│   │   │   │   └── vuedotjs.png
+│   │   │   ├── ml
+│   │   │   │   ├── geojson.png
+│   │   │   │   ├── jupyter.png
+│   │   │   │   ├── keras.png
+│   │   │   │   ├── numpy.png
+│   │   │   │   ├── opencv.png
+│   │   │   │   ├── pandas.png
+│   │   │   │   ├── python.png
+│   │   │   │   ├── pytorch.png
+│   │   │   │   ├── scikitlearn.png
+│   │   │   │   ├── tensorflow.png
+│   │   │   │   ├── unet.png
+│   │   │   │   ├── yolo copy.png
+│   │   │   │   └── yolo.png
+│   │   │   └── systems
+│   │   │       ├── aws.png
+│   │   │       ├── docker.png
+│   │   │       ├── firebase.png
+│   │   │       ├── git.png
+│   │   │       ├── github.png
+│   │   │       ├── gnubash.png
+│   │   │       ├── kubernetes.png
+│   │   │       ├── linux.png
+│   │   │       ├── nginx.png
+│   │   │       └── VS Code.png
+│   │   └── ui
+│   │       ├── buttons
+│   │       │   ├── button-download.png
+│   │       │   ├── button-play.png
+│   │       │   ├── button-quit.png
+│   │       │   ├── button-resume.png
+│   │       │   └── button-start.png
+│   │       ├── controls
+│   │       │   ├── arrow-left.png
+│   │       │   ├── arrow-right.png
+│   │       │   ├── arrow-up.png
+│   │       │   ├── button-interact.png
+│   │       │   └── button-jump.png
+│   │       ├── icons
+│   │       │   ├── icon-map.png
+│   │       │   ├── icon-pause.png
+│   │       │   ├── icon-sound.png
+│   │       │   └── icon-star.png
+│   │       └── panels
+│   │           ├── panel-base.png
+│   │           ├── panel-dialogue.png
+│   │           └── panel-popup.png
+│   ├── certificates
+│   │   └── 1721143297915 (1).pdf
+│   ├── resume.pdf
+│   └── vite.svg
+├── README.md
+├── sprite-preview-day2.html
+├── src
+│   ├── App.css
+│   ├── App.jsx
+│   ├── assets
+│   │   └── react.svg
+│   ├── components
+│   │   ├── PhaserGame.jsx
+│   │   └── ProjectModal.jsx
+│   ├── data
+│   │   ├── achievements.json
+│   │   ├── coursework.json
+│   │   ├── education.json
+│   │   ├── hobbies.json
+│   │   ├── iitb-info.json
+│   │   ├── positions.json
+│   │   ├── projects.json
+│   │   ├── quiz-questions.json
+│   │   └── skills.json
+│   ├── game
+│   │   ├── config.js
+│   │   ├── entities
+│   │   │   └── Player.js
+│   │   ├── index.js
+│   │   └── scenes
+│   │       ├── GameScene.js
+│   │       ├── Level1HobbiesScene.js
+│   │       ├── Level1LibraryScene.js
+│   │       ├── Level1Scene.js
+│   │       ├── Level2Scene.js
+│   │       ├── Level3Scene.js
+│   │       └── PreloadScene.js
+│   ├── index.css
+│   └── main.jsx
+├── tailwind.config.js
+└── vite.config.js
+
+34 directories, 177 files

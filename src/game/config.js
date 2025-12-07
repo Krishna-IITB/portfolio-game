@@ -1,32 +1,70 @@
-// export const GAME_WIDTH = 1024;
-// export const GAME_HEIGHT = 600;
-// export const PHYSICS_CONFIG = {
-//   default: 'arcade',
-//   arcade: {
-//     gravity: { y: 300 },
-//     debug: false
+
+
+
+
+
+// // src/game/config.js
+// const config = {
+//   type: Phaser.AUTO,
+//   width: 1280,
+//   height: 720,
+//   backgroundColor: '#1a1a2e',
+//   physics: {
+//     default: 'arcade',
+//     arcade: {
+//       gravity: { y: 800 },
+//       debug: false
+//     }
+//   },
+//   scale: {
+//     mode: Phaser.Scale.FIT,
+//     autoCenter: Phaser.Scale.CENTER_BOTH,
+//     width: 1280,
+//     height: 720
+//     // ✅ parent set DYNAMICALLY in index.js
+//   },
+//   render: {
+//     pixelArt: false,
+//     antialias: true
 //   }
 // };
 
-// export const SCENES = [
-//   'PreloadScene',
-//   'GameScene'
-// ];
+// export default config;
+
+
+
+
 
 
 
 // src/game/config.js
-export const GAME_WIDTH = 1024;
-export const GAME_HEIGHT = 600;
-export const PHYSICS_CONFIG = {
-  default: 'arcade',
-  arcade: {
-    gravity: { y: 450 },
-    debug: false
+
+// ✅ NO CHANGES NEEDED - This config is perfect as-is!
+// The movement system is handled in index.js, not config
+
+const config = {
+  type: Phaser.AUTO,
+  width: 1280,
+  height: 720,
+  backgroundColor: '#1a1a2e',
+  physics: {
+    default: 'arcade',
+    arcade: {
+      gravity: { y: 800 },
+      debug: false
+    }
+  },
+  scale: {
+    mode: Phaser.Scale.FIT,
+    autoCenter: Phaser.Scale.CENTER_BOTH,
+    width: 1280,
+    height: 720
+    // ✅ parent set DYNAMICALLY in index.js
+  },
+  render: {
+    pixelArt: false,
+    antialias: true
   }
 };
 
-import PreloadScene from './scenes/PreloadScene';
-import GameScene from './scenes/GameScene';
-
-export const SCENES = [PreloadScene, GameScene];
+export default config;

@@ -9,6 +9,12 @@
   },
   "departments": 16,
   "students": "11,000+",
+  "facilities": [
+    "Central Library with 5 lakh+ books",
+    "Sports Complex with Olympic-size pool",
+    "Student Activity Center",
+    "Advanced research labs"
+  ],
   "funFacts": [
     "Home to Asia's 1st maglev train prototype",
     "Alumni include Nandan Nilekani, Manohar Parrikar, Parag Agrawal, Raghunath Mashelkar",
@@ -16,4 +22,3 @@
     "Mood Indigo - Asia's largest college cultural festival"
   ]
 }
-

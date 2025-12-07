@@ -15,6 +15,20 @@
   },
   {
     "id": 2,
+    "title": "Satellite Segmentation",
+    "company": "MapmyIndia",
+    "level": 2,
+    "techStack": ["YOLOv8", "U-Net", "PyInstaller", "GeoJSON"],
+    "bullets": [
+      "Developed solar panel and land-cover segmentation with ~92% IoU on satellite tiles.",
+      "Packaged a cross-platform CLI that exports GeoJSON shapefiles for deployment."
+    ],
+    "githubLink": "https://github.com/yourname/satellite-seg",
+    "demoImage": "/assets/demos/satellite-demo.gif",
+    "duration": "Jul 2024 - Oct 2024"
+  },
+  {
+    "id": 3,
     "title": "URL Shortener with Analytics",
     "company": "Personal Project",
     "level": 3,
@@ -28,7 +42,7 @@
     "duration": "Nov 2024 - Present"
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Intrusion Detection System",
     "company": "Seasons of Code, IIT Bombay",
     "level": 4,
@@ -42,7 +56,7 @@
     "duration": "May 2023 - Jul 2023"
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "6-Stage RISC Processor",
     "company": "EE309 Course Project",
     "level": 5,

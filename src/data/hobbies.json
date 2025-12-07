@@ -1,26 +1,53 @@
 [
   {
-    "name": "Competitive Programming",
-    "category": "Tech",
-    "description": "LeetCode daily practice - solving DSA problems",
-    "icon": "hobby-laptop-code.png",
-    "level": "Advanced",
-    "funFact": "Solved 200+ problems (uKrishna82793)"
-  },
-  {
-    "name": "System Design Study",
-    "category": "Learning",
-    "description": "Currently studying networking, OS, and system design",
-    "icon": "hobby-books.png",
-    "level": "Intermediate",
-    "funFact": "Building URL shortener for practice"
-  },
-  {
-    "name": "Anime & Manga",
+    "name": "Anime Watching",
+    "icon": "📺",
     "category": "Entertainment",
-    "description": "Watching anime series and reading manga during free time",
-    "icon": "hobby-anime.png",
-    "level": "Casual",
-    "funFact": "Enjoy exploring different genres and discussing plots online"
+    "level": 9,
+    "funFact": "Watched over 200+ anime series including Solo Leveling!",
+    "description": "Passionate about anime storytelling, character development, and exploring different genres from shonen to slice of life.",
+    "achievements": [
+      "Completed Attack on Titan series",
+      "Watched all Studio Ghibli films",
+      "Active member of anime community"
+    ]
+  },
+  {
+    "name": "Manga Reading",
+    "icon": "📖",
+    "category": "Entertainment",
+    "level": 8,
+    "funFact": "Read manga in both Japanese and English translations",
+    "description": "Love diving into manga stories, especially those with unique art styles and compelling narratives.",
+    "achievements": [
+      "Read 100+ manga volumes",
+      "Following 20+ ongoing series"
+    ]
+  },
+  {
+    "name": "Kabaddi",
+    "icon": "🏃",
+    "category": "Sports",
+    "level": 7,
+    "funFact": "Team captain in college kabaddi tournaments",
+    "description": "Playing kabaddi for fitness, team strategy, and competitive spirit.",
+    "achievements": [
+      "Led team to inter-college finals",
+      "Best raider award 2024"
+    ]
+  },
+  {
+    "name": "Coding",
+    "icon": "💻",
+    "category": "Technical",
+    "level": 9,
+    "funFact": "Built 15+ full-stack projects using modern technologies",
+    "description": "Developing web applications, exploring new frameworks, and solving complex problems through code. Active competitive programmer on LeetCode.",
+    "achievements": [
+      "Deployed production applications",
+      "Contributed to open source",
+      "Won hackathon competitions",
+      "LeetCode: leetcode.com/Krishna_82793"
+    ]
   }
 ]

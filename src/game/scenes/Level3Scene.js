@@ -1,7 +1,6 @@
 
 
 
-
 // // src/game/scenes/Level3Scene.js
 // import Phaser from 'phaser';
 // import Player from '../entities/Player';
@@ -15,6 +14,9 @@
 //   create() {
 //     // 1) Security room background
 //     this.add.image(512, 300, 'level3-security').setScrollFactor(0);
+
+//     // Dark overlay so gameplay pops
+//     this.add.rectangle(512, 300, 1024, 600, 0x000000, 0.45).setScrollFactor(0);
 
 //     // 2) Platforms / ground
 //     this.createPlatforms();
@@ -43,7 +45,7 @@
 
 //     // HUD text
 //     this.add
-//       .text(40, 40, 'Level 3: AI Guard – Dodge the laser, reach the PC (E)', {
+//       .text(40, 30, 'Level 3: AI Guard – Reach the PC, avoid the laser (E)', {
 //         fontSize: '16px',
 //         color: '#ffffff'
 //       })
@@ -60,9 +62,9 @@
 //       .setScale(16, 1)
 //       .refreshBody();
 
-//     // Small raised platform under PC
+//     // Raised platform under PC (slightly lower)
 //     this.platforms
-//       .create(780, 420, 'platform-basic')
+//       .create(780, 460, 'platform-basic') // y 460
 //       .setScale(2, 1)
 //       .refreshBody();
 //   }
@@ -89,19 +91,21 @@
 //     });
 //   }
 
-//   // ---------- Timed laser hazard ----------
+//   // ---------- Timed laser hazard (graphics) ----------
 //   createLaserHazard() {
-//     // Horizontal laser near middle of level
-//     this.laser = this.physics.add.staticImage(520, 560, 'laser-beam');
-//     this.laser.setScale(3.5, 0.6);
-//     this.laser.setVisible(false);
+//     // Red beam just above ground
+//     this.laserGraphic = this.add
+//       .rectangle(520, 560, 600, 8, 0xff0033)
+//       .setOrigin(0.5, 0.5)
+//       .setAlpha(0);
+
+//     this.physics.add.existing(this.laserGraphic, true); // static body
 
 //     this.laserActive = false;
 
-//     // Overlap only hurts when active
 //     this.physics.add.overlap(
 //       this.player,
-//       this.laser,
+//       this.laserGraphic,
 //       () => {
 //         if (this.laserActive) {
 //           this.handlePlayerHitByLaser();
@@ -111,19 +115,18 @@
 //       this
 //     );
 
-//     // Toggle laser on/off every 1.2s
+//     // Toggle on/off
 //     this.time.addEvent({
 //       delay: 1200,
 //       loop: true,
 //       callback: () => {
 //         this.laserActive = !this.laserActive;
-//         this.laser.setVisible(this.laserActive);
+//         this.laserGraphic.setAlpha(this.laserActive ? 0.9 : 0);
 //       }
 //     });
 //   }
 
 //   handlePlayerHitByLaser() {
-//     // Simple feedback + reset to start
 //     this.player.setTint(0xff0000);
 //     this.time.delayedCall(150, () => this.player.clearTint());
 //     this.player.setPosition(120, 450);
@@ -131,7 +134,8 @@
 
 //   // ---------- AI Guard computer ----------
 //   createComputerTerminal() {
-//     this.computer = this.physics.add.staticImage(780, 380, 'pc-terminal');
+//     // Moved slightly down with platform
+//     this.computer = this.physics.add.staticImage(780, 420, 'pc-terminal');
 
 //     this.physics.add.overlap(
 //       this.player,
@@ -144,7 +148,7 @@
 //     );
 
 //     this.add
-//       .text(780, 330, 'AI Guard\nPress E', {
+//       .text(780, 370, 'AI Guard\nPress E', {
 //         fontSize: '14px',
 //         color: '#00ffea',
 //         align: 'center'
@@ -157,9 +161,9 @@
 //     this.techIcons = this.physics.add.group();
 
 //     const techData = [
-//       { key: 'icon-deepface', name: 'DeepFace', x: 280, y: 420 },
-//       { key: 'icon-llama',    name: 'Llama',    x: 520, y: 360 },
-//       { key: 'icon-telegram', name: 'Telegram', x: 880, y: 260 }
+//       { key: 'icon-deepface', name: 'DeepFace', x: 260, y: 500 },
+//       { key: 'icon-llama',    name: 'Llama',    x: 520, y: 440 },
+//       { key: 'icon-telegram', name: 'Telegram', x: 820, y: 500 }
 //     ];
 
 //     techData.forEach(t => {
@@ -191,7 +195,7 @@
 //     if (!target || !this.callbacks) return;
 
 //     if (target.type === 'aiGuardDemo') {
-//       // Use your new AI Guard (id:3) entry from projects.json
+//       // Use your AI Guard (id:3) entry from projects.json
 //       const project = projects.find(p => p.id === 3);
 //       if (project && this.callbacks.openProjectModal) {
 //         this.callbacks.openProjectModal(project);
@@ -216,10 +220,7 @@
 // }
 
 
-
-
-
-// src/game/scenes/Level3Scene.js
+// REPLACE ENTIRE src/game/scenes/Level3Scene.js
 import Phaser from 'phaser';
 import Player from '../entities/Player';
 import projects from '../../data/projects.json';
@@ -260,6 +261,7 @@ export default class Level3Scene extends Phaser.Scene {
     this.createLaserHazard();
     this.createComputerTerminal();
     this.createTechCollectibles();
+    this.createNavigationDoors();
 
     // HUD text
     this.add
@@ -282,7 +284,7 @@ export default class Level3Scene extends Phaser.Scene {
 
     // Raised platform under PC (slightly lower)
     this.platforms
-      .create(780, 460, 'platform-basic') // y 460
+      .create(780, 460, 'platform-basic')
       .setScale(2, 1)
       .refreshBody();
   }
@@ -408,16 +410,47 @@ export default class Level3Scene extends Phaser.Scene {
     );
   }
 
+  // ---------- Navigation Doors ----------
+  createNavigationDoors() {
+    this.createDoor(60, 540, '← Level 2', 0x6366f1, 'Level2Scene');
+    this.createDoor(950, 540, '→ Level 4', 0x10b981, 'Level4Scene');
+  }
+
+  createDoor(x, y, label, color, targetScene) {
+    const doorBg = this.add.graphics();
+    doorBg.fillStyle(color, 0.2);
+    doorBg.fillRoundedRect(x - 40, y - 60, 80, 110, 12);
+    doorBg.lineStyle(2, color, 1);
+    doorBg.strokeRoundedRect(x - 40, y - 60, 80, 110, 12);
+
+    const door = this.physics.add.staticImage(x, y, 'door-standard')
+      .setScale(0.8).setInteractive();
+
+    this.add.text(x, y - 80, label, {
+      fontSize: '14px',
+      color: color,
+      fontStyle: 'bold'
+    }).setOrigin(0.5);
+
+    door.on('pointerover', () => this.scene.start(targetScene));
+    
+    this.physics.add.overlap(this.player, door, () => {
+      this.currentInteractTarget = { type: 'door', scene: targetScene };
+    });
+  }
+
   // ---------- Interactions ----------
   handleInteraction(target) {
     if (!target || !this.callbacks) return;
 
     if (target.type === 'aiGuardDemo') {
-      // Use your AI Guard (id:3) entry from projects.json
-      const project = projects.find(p => p.id === 3);
+      // ✅ FIXED: Use AI Guard project (id: 1)
+      const project = projects.find(p => p.id === 1);
       if (project && this.callbacks.openProjectModal) {
         this.callbacks.openProjectModal(project);
       }
+    } else if (target.type === 'door') {
+      this.scene.start(target.scene);
     }
 
     this.currentInteractTarget = null;

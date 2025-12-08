@@ -285,6 +285,8 @@ import Level1LibraryScene from './scenes/Level1LibraryScene';
 import Level1SkillsScene from './scenes/Level1SkillsScene';  // ✅ NEW!
 import Level2Scene from './scenes/Level2Scene';
 import Level3Scene from './scenes/Level3Scene';
+import Level4Scene from './scenes/Level4Scene';
+import Level5Scene from './scenes/Level5Scene';
 
 let game = null;
 
@@ -314,7 +316,9 @@ const config = {
     Level1LibraryScene,
     Level1SkillsScene,  // ✅ NEW SKILLS SCENE
     Level2Scene,
-    Level3Scene
+    Level3Scene,
+    Level4Scene,
+    Level5Scene
   ]
 };
 

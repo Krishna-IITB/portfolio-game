@@ -1,23 +1,32 @@
-[
+ [
   {
     "id": 1,
-    "question": "What is your current CGPA at IIT Bombay?",
-    "options": ["7.8", "8.43", "9.2", "8.0"],
-    "correctAnswer": 1,
-    "explanation": "8.43 out of 10.0"
+    "question": "Which project uses YOLOv8 and U-Net?",
+    "options": ["AI Guard Agent", "Satellite Segmentation", "URL Shortener", "RISC Processor"],
+    "answerIndex": 1
   },
   {
     "id": 2,
-    "question": "Which course involves Test Generation?",
-    "options": ["EE709", "EE782", "CS419", "EE309"],
-    "correctAnswer": 0,
-    "explanation": "EE709 - Testing & Verification"
+    "question": "Which tech is used for your URL Shortener backend?",
+    "options": ["Django", "Node.js + Express", "Flask", "Spring Boot"],
+    "answerIndex": 1
   },
   {
     "id": 3,
-    "question": "How many LeetCode problems solved?",
-    "options": ["100+", "150+", "200+", "300+"],
-    "correctAnswer": 2,
-    "explanation": "Over 200 problems on LeetCode"
+    "question": "Which project achieved 95% accuracy on network traffic?",
+    "options": ["AI Guard Agent", "Intrusion Detection System", "RISC Processor", "Satellite Segmentation"],
+    "answerIndex": 1
+  },
+  {
+    "id": 4,
+    "question": "Which language is used for your RISC processor design?",
+    "options": ["Verilog", "C++", "VHDL", "Rust"],
+    "answerIndex": 2
+  },
+  {
+    "id": 5,
+    "question": "Which framework powers your AI Guard model integration?",
+    "options": ["TensorFlow", "Scikit-learn", "PyTorch", "FastAPI"],
+    "answerIndex": 2
   }
 ]

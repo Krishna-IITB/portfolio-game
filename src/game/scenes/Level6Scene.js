@@ -295,7 +295,7 @@ export default class Level6Scene extends Phaser.Scene {
 
   createNavigationDoors() {
     this.createDoor(100, 580, '← Level 5', 0x22c55e, 'Level5Scene');
-    this.createDoor(3100, 580, '→ Boss Level', 0xa855f7, 'Level7Scene');
+    this.createDoor(3100, 580, '→ Boss Level', 0xa855f7, 'BossScene');
   }
 
   createDoor(x, y, label, color, targetScene) {

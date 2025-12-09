@@ -267,6 +267,15 @@ export default class PreloadScene extends Phaser.Scene {
     // LEVEL 6 - RISC PROCESSOR
     this.load.image('chip-processor', '/assets/objects/interactive/chip-processor.png');
 
+
+    // LEVEL - BOSS GAME
+this.load.image('boss-arena', '/assets/backgrounds/boss-arena.png');
+this.load.image('npc-recruiter', '/assets/characters/npcs/npc-recruiter.png');
+
+
+
+
+
     // LIBRARY OBJECTS
     this.load.image('bookshelf', '/assets/objects/interactive/bookshelf.png');
     this.load.image('certificate-frame', '/assets/objects/interactive/certificate-frame.png');

@@ -288,6 +288,7 @@ import Level3Scene from './scenes/Level3Scene';
 import Level4Scene from './scenes/Level4Scene';
 import Level5Scene from './scenes/Level5Scene';
 import Level6Scene from './scenes/Level6Scene';
+import BossScene from './scenes/BossScene';
 
 
 let game = null;
@@ -322,6 +323,7 @@ const config = {
     Level4Scene,
     Level5Scene,
     Level6Scene,
+    BossScene
   ]
 };
 
